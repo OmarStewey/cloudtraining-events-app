@@ -1,0 +1,24 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: demo-api
+spec: 
+  selector:
+    matchLabels:
+      app: demo-api
+  replicas: 1 # tells deployment to run 1 pod matching the template
+  template:
+    metadata:
+      labels:
+        app: demo-api
+    spec:
+      containers:
+      - name: demo-api
+        image: omarstewey/internal:v1.0
+        env: 
+        - name: SERVICE_PORT
+          value: "8082"
+        ports:
+        - containerPort: 8082
+            
+        

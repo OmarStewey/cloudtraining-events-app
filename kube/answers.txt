@@ -1,0 +1,11 @@
+What is the name of the external service load balancer?
+demo-ui-service
+
+What port number does the external service operate on?
+80
+
+What is the name of the internal service cluster IP?
+demo-service
+
+What port number does the internal service operate on?
+8082
