@@ -174,6 +174,7 @@ const server = app.listen(SERVICE_PORT, () => {
     const host = server.address().address;
     const port = server.address().port;
 
+    console.log('Cloud Cocktail!')
     console.log(`Events app listening at http://${host}:${port}`);
 });
 
