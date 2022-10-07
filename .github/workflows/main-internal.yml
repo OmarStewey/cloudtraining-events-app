@@ -16,6 +16,7 @@ jobs:
     name: Setup, Build, Publish
     runs-on: ubuntu-latest
     environment: production
+    working-directory: 'internal'
 
     steps:
     - name: Checkout
